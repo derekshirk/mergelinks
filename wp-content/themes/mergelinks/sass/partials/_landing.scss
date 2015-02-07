@@ -1,0 +1,54 @@
+.window {
+	height: 100%;
+	height: 100vh;
+	text-align: left;
+	background: url(images/mergelinks-bg.jpg) center center no-repeat;
+	background-blend-mode: multiply;
+	background-size: cover;
+	@include outer-container(100%);
+	
+
+}
+
+.landing-page {
+	// @include span-columns(6);
+	@include pad(50px 40px);
+	@include media(40em) {
+		@include pad(50px 80px);
+	}
+
+	@extend .table;
+	margin: 0 auto;
+	color: #fff;
+	
+
+	.content {
+		@extend .table-cell;
+		margin: 0 auto;
+		@include media(40em) {
+			@include pad(0 0 50px 0);
+		}
+		
+	}
+
+	svg {
+		width: 300px;
+		@include media(40em) {
+			width: 400px;
+		}
+	}
+
+	.sub-title {
+		font-size: 1.2em;
+		line-height: 1.5;
+		width: 100%;
+		@include media(40em) {
+			width: 55%;
+		}
+
+		
+		// margin: 0 auto;
+		font-weight: 100;
+		letter-spacing: 0.04em;
+	}
+}

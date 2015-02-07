@@ -1,0 +1,69 @@
+.subscribe {
+
+  form {
+
+
+  }
+
+
+}
+
+h2.form-label {
+	margin: 100px 0 20px 0;
+	font-size: 2em;
+}
+
+
+.input {
+  width: 90%;
+  float:left;
+
+  @include media(55em) {
+    width: 55%;
+  }
+  height: 70px;
+  margin: 0 auto;
+  background: transparent;
+  border: 3px solid #fff;
+  padding: 0 25px;
+  color: #fff;
+  font-size: 1em;
+  
+}
+
+.submit-button {
+	// opacity: 0;
+  float: left;
+   // width: 9%;
+   width: 32px; 
+   height: 32px;
+   background: url(images/chevron-right.png) no-repeat !important;
+   text-indent: -9999px;
+   display: block;
+   position: relative; 
+   right: 50px;
+   top: 18px;
+}
+
+:focus {
+  outline: 3px solid #fff;
+
+  + .submit-button {
+    opacity: 1;
+  }
+
+}
+
+.placeholder-active{
+    color: #fff;
+   
+}
+
+
+input[type="submit"]  {
+	background: transparent;
+	border: none;
+	// position: relative;
+	// bottom: 45px;
+	// left: 40%;
+}
