@@ -11,12 +11,10 @@
 			</div>
 
 			<div class="sub-title">
-				MergeLinks is a weekly email of curated links to articles, resources, freebies and inspiration for web designers and developers 
-
+				MergeLinks is a weekly email of curated links to articles, resources, freebies and inspiration for web designers and developers. 
 			</div>
 			
-			
-		<?php get_template_part('partials/partials', 'mailchimp_signup' ); ?>
+  		<?php get_template_part('partials/partials', 'mailchimp_signup' ); ?>
 				
 				
 		</div>

@@ -6,49 +6,75 @@
 	background-blend-mode: multiply;
 	background-size: cover;
 	@include outer-container(100%);
-	
 
-}
 
-.landing-page {
-	// @include span-columns(6);
-	@include pad(50px 40px);
-	@include media(40em) {
-		@include pad(50px 80px);
-	}
+	.landing-page {
+		@include pad(0px 20px 0 20px);
+		@include media(40em) {
+			@include pad(50px 80px);
+		}
 
-	@extend .table;
-	margin: 0 auto;
-	color: #fff;
-	
-
-	.content {
-		@extend .table-cell;
+		@extend .table;
 		margin: 0 auto;
-		@include media(40em) {
-			@include pad(0 0 50px 0);
-		}
+		color: #fff;
 		
-	}
+		.content {
+			
+			margin: 0 auto;
+			@include media(40em) {
+				@include pad(0 0 50px 0);
+				display: table-cell; 
+				vertical-align: middle;
 
-	svg {
-		width: 300px;
-		@include media(40em) {
-			width: 400px;
+			}	
+		}
+
+		.logo {
+			margin: 25px auto 25px auto;
+			width: 280px;
+			
+			@include media(40em) {
+				width: 350px;
+				}
+
+				@include media(60em) {
+					margin: 0;
+				}
+
+
+			// @include media(40em) {
+			// 	margin: 0;
+			// 	}
+
+			svg {
+				// width: 280px;
+				// height: 75px;
+				width: 100%;
+				position: relative;
+				right: 5px;
+				
+				@include media(40em) {
+					// width: 400px;
+				// height: 140px;
+				}
+			}
+
+		}
+
+	
+		.sub-title {
+			font-size: 1em;
+			line-height: 1.5;
+			text-align: center;
+			width: 100%;
+			font-weight: 400;
+			letter-spacing: 0.04em;
+
+			@include media(60em) {
+				width: 55%;
+				text-align: left;
+			}
 		}
 	}
 
-	.sub-title {
-		font-size: 1.2em;
-		line-height: 1.5;
-		width: 100%;
-		@include media(40em) {
-			width: 55%;
-		}
-
-		
-		// margin: 0 auto;
-		font-weight: 100;
-		letter-spacing: 0.04em;
-	}
-}
+} // end window
