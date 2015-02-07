@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 
-
-<div class="window">
+<div class="window wow fadeIn">
 	<div class="landing-page">
-		<div class="content">
+		<div class="content wow bounceInLeft" data-wow-delay="1s">
 			
 			<div class="logo">
 			
