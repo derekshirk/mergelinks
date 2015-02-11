@@ -2669,7 +2669,7 @@ Copyright (c) 2013 Daniel Eden
           vertical-align: middle; } }
     /* line 32, sass/partials/_landing.scss */
     .window .landing-page .logo {
-      margin: 25px auto 25px auto;
+      margin: 10px auto 25px auto;
       width: 280px; }
       @media screen and (min-width: 40em) {
         /* line 32, sass/partials/_landing.scss */
